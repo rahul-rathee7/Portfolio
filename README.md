@@ -7,7 +7,7 @@
   </p>
 
   <!-- Optional: Add your live portfolio link prominently -->
-  <a href="https://your-portfolio-domain.com" target="_blank">
+  <a href="https://portfolio-bay-seven-69.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/Visit%20My%20Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
   </a>
 
@@ -21,7 +21,7 @@ This is the source code for my personal portfolio website — a clean, modern, a
 
 Built with love using cutting-edge tools and following 2025–2026 design trends.
 
-**Live Demo:** https://your-portfolio-domain.com  
+**Live Demo:** https://portfolio-bay-seven-69.vercel.app/  
 (Deployed via Vercel)
 
 ## 🌟 Features

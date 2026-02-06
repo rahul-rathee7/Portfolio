@@ -100,7 +100,7 @@ export function ProjectSection() {
                 className='mt-20'
             >
                 {projects.map((project, index) => (
-                    <div key={index} className='my-20 border-l-2 pl-6 border-background flex flex-col gap-4'>
+                    <div key={index} className='my-20 border-l-2 pl-4 md:pl-10 border-background flex flex-col gap-4'>
                         <div>
                         <h3 className='text-3xl md:text-4xl font-bold'>{project.title}</h3>
                         <p className='text-sm mt-2 md:text-lg text-[#8e8e8f]'>{project.status}</p>

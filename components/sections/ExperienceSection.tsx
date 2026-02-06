@@ -72,17 +72,17 @@ export function ExperienceSection() {
                 </motion.h2>
                 <motion.div
                     variants={itemVariants}>
-                        <h3 className='text-2xl text-center md:text-4xl md:text-left md:font-semibold mt-20'>Experience</h3>
+                        <h3 className='text-3xl text-center md:text-4xl md:text-left md:font-semibold mt-20'>Experience</h3>
                         <motion.div>
                             {experiences.map((item, index) => (
-                                <div key={index} className='border-l-2 py-3 pl-4 md:pl-10 mb-10 mt-10 flex flex-col'>
+                                <div key={index} className='border-l-2 pl-4 md:pl-10 mb-10 mt-10 flex flex-col'>
                                     <h4 className='text-xl md:text-2xl font-semibold'>{item.role}</h4>
                                     <div className='mt-3 flex justify-between items-center'>
                                     <p className='md:text-lg font-light'>{item.company}</p>
                                     <p className='text-sm md:text-lg text-[#8e8e8f]'>{item.period}</p>
                                     </div>
-                                    <p className='md:text-lg py-3'>{item.description}</p>
-                                    <ul className='text-sm md:text-lg list-disc ml-4 text-[#8e8e8f]'>
+                                    <p className='text-lg md:text-xl py-3'>{item.description}</p>
+                                    <ul className='text-lg md:text-xl list-disc ml-4 text-[#8e8e8f]'>
                                         {item.highlights.map((point, idx) => (
                                             <li key={idx} className='py-1'>{point}</li>
                                         ))}
@@ -93,7 +93,7 @@ export function ExperienceSection() {
                 </motion.div>
                 <motion.div
                     variants={itemVariants}>
-                        <h3 className='text-2xl text-center md:text-4xl md:text-left mt-20 md:font-semibold'>Education</h3>
+                        <h3 className='text-3xl text-center md:text-4xl md:text-left mt-20 md:font-semibold'>Education</h3>
                         <motion.div>
                             {education.map((item, index) => (
                                 <div key={index} className='border-l-2 py-3 pl-4 md:pl-10 mb-10 mt-10'>
@@ -102,7 +102,7 @@ export function ExperienceSection() {
                                     <p className='md:text-lg font-light'>{item.school}</p>
                                     <p className='text-sm md:text-lg text-[#8e8e8f]'>{item.period}</p>
                                     </div>
-                                    <ul className='text-sm md:text-lg list-disc ml-4 text-[#8e8e8f] py-3'>
+                                    <ul className='text-lg md:text-xl list-disc ml-4 text-[#8e8e8f] py-3'>
                                         {item.highlights.map((point, idx) => (
                                             <li key={idx} className='py-1'>{point}</li>
                                         ))}
@@ -118,7 +118,7 @@ export function ExperienceSection() {
                             {leaderships.map((item, index) => (
                                 <div key={index} className='border-l-2 py-3 pl-4 md:pl-10 mb-10 mt-10'>
                                     <h4 className='text-xl md:text-2xl'>{item.title}</h4>
-                                    <p className='text-[#8e8e8f] py-1'>{item.description}</p>
+                                    <p className='text-lg text-[#8e8e8f] py-1'>{item.description}</p>
                                 </div>
                             ))}
                         </motion.div>

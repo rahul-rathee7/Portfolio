@@ -1,8 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { desc, h3 } from 'motion/react-client'
-import { title } from 'process'
 import { useInView } from 'react-intersection-observer'
 
 export function ExperienceSection() {
@@ -69,22 +67,22 @@ export function ExperienceSection() {
             >
                 <motion.h2
                     variants={itemVariants}
-                    className='text-6xl font-bold'>
+                    className='text-4xl text-center md:text-6xl md:text-left font-bold'>
                     Experience & Education
                 </motion.h2>
                 <motion.div
                     variants={itemVariants}>
-                        <h3 className='text-4xl mt-20 font-semibold'>Experience</h3>
+                        <h3 className='text-2xl text-center md:text-4xl md:text-left md:font-semibold mt-20'>Experience</h3>
                         <motion.div>
                             {experiences.map((item, index) => (
-                                <div key={index} className='border-l-2 py-3 pl-10 mb-10 mt-10 flex flex-col'>
-                                    <h4 className='text-2xl font-semibold'>{item.role}</h4>
-                                    <div className='flex justify-between'>
-                                    <p className='text-lg'>{item.company}</p>
-                                    <p className='text-[#8e8e8f]'>{item.period}</p>
+                                <div key={index} className='border-l-2 py-3 pl-4 md:pl-10 mb-10 mt-10 flex flex-col'>
+                                    <h4 className='text-xl md:text-2xl font-semibold'>{item.role}</h4>
+                                    <div className='mt-3 flex justify-between items-center'>
+                                    <p className='md:text-lg font-light'>{item.company}</p>
+                                    <p className='text-sm md:text-lg text-[#8e8e8f]'>{item.period}</p>
                                     </div>
-                                    <p className='text-lg py-3'>{item.description}</p>
-                                    <ul className='list-disc ml-4 text-[#8e8e8f]'>
+                                    <p className='md:text-lg py-3'>{item.description}</p>
+                                    <ul className='text-sm md:text-lg list-disc ml-4 text-[#8e8e8f]'>
                                         {item.highlights.map((point, idx) => (
                                             <li key={idx} className='py-1'>{point}</li>
                                         ))}
@@ -95,16 +93,16 @@ export function ExperienceSection() {
                 </motion.div>
                 <motion.div
                     variants={itemVariants}>
-                        <h3 className='text-4xl mt-20 font-semibold'>Education</h3>
+                        <h3 className='text-2xl text-center md:text-4xl md:text-left mt-20 md:font-semibold'>Education</h3>
                         <motion.div>
                             {education.map((item, index) => (
-                                <div key={index} className='border-l-2 py-3 pl-10 mb-10 mt-10'>
-                                    <h4 className='text-2xl font-semibold'>{item.degree}</h4>
-                                    <div className='flex justify-between'>
-                                    <p className='text-lg'>{item.school}</p>
-                                    <p className='text-[#8e8e8f]'>{item.period}</p>
+                                <div key={index} className='border-l-2 py-3 pl-4 md:pl-10 mb-10 mt-10'>
+                                    <h4 className='text-xl md:text-2xl font-semibold'>{item.degree}</h4>
+                                    <div className='mt-3 flex justify-between items-center'>
+                                    <p className='md:text-lg font-light'>{item.school}</p>
+                                    <p className='text-sm md:text-lg text-[#8e8e8f]'>{item.period}</p>
                                     </div>
-                                    <ul className='list-disc ml-4 text-[#8e8e8f] py-3'>
+                                    <ul className='text-sm md:text-lg list-disc ml-4 text-[#8e8e8f] py-3'>
                                         {item.highlights.map((point, idx) => (
                                             <li key={idx} className='py-1'>{point}</li>
                                         ))}
@@ -115,11 +113,11 @@ export function ExperienceSection() {
                 </motion.div>
                 <motion.div
                     variants={itemVariants}>
-                        <h3 className='text-4xl mt-20 font-semibold'>Leadership & Achievements</h3>
+                        <h3 className='text-2xl text-center md:text-4xl md:text-left mt-20 md:font-semibold'>Leadership & Achievements</h3>
                         <motion.div>
                             {leaderships.map((item, index) => (
-                                <div key={index} className='border-l-2 py-3 pl-10 mb-10 mt-10'>
-                                    <h4 className='text-2xl font-semibold'>{item.title}</h4>
+                                <div key={index} className='border-l-2 py-3 pl-4 md:pl-10 mb-10 mt-10'>
+                                    <h4 className='text-xl md:text-2xl'>{item.title}</h4>
                                     <p className='text-[#8e8e8f] py-1'>{item.description}</p>
                                 </div>
                             ))}

@@ -27,7 +27,7 @@ export function ProjectSection() {
     const projects = [
         {
             title: "Event Management System",
-            status: "In Progress",
+            status: "Live",
             description: "Full-stack event creation and registration platform with secure APIs and efficient database design.",
             problem: "Need for a comprehensive solution to manage events, registrations, and participant data.",
             solution:
@@ -42,7 +42,7 @@ export function ProjectSection() {
             ],
             highlights:
                 "Designed responsive UI with ShadCN components and built scalable REST APIs with proper authentication.",
-            liveUrl: "#",
+            liveUrl: "https://event-mangement-system-one.vercel.app/",
             githubUrl: "https://github.com/rahul-rathee7/Event-Mangement-System.git",
         },
         {
@@ -92,7 +92,7 @@ export function ProjectSection() {
                 ref={ref}
             >
             <motion.h2
-                className='text-6xl font-bold mb-10'>
+                className='text-4xl text-center md:text-6xl md:text-left font-bold mb-10'>
                 Projects
             </motion.h2>
             <motion.div
@@ -102,45 +102,45 @@ export function ProjectSection() {
                 {projects.map((project, index) => (
                     <div key={index} className='my-20 border-l-2 pl-6 border-background flex flex-col gap-4'>
                         <div>
-                        <h3 className='text-4xl font-bold'>{project.title}</h3>
-                        <p className='text-[#8e8e8f]'>{project.status}</p>
+                        <h3 className='text-3xl md:text-4xl font-bold'>{project.title}</h3>
+                        <p className='text-sm mt-2 md:text-lg text-[#8e8e8f]'>{project.status}</p>
                         </div>
-                        <p className='text-xl'>{project.description}</p>
+                        <p className='text-2xl'>{project.description}</p>
                         <div className='grid grid-cols-2 gap-4'>
                             <div className='flex flex-col'>
-                            <h4 className='text-2xl font-semibold mt-4'>PROBLEM</h4>
-                            <p className='text-xl py-2 text-[#8e8e8f]'>{project.problem}</p>
+                            <h4 className='text-xl md:text-2xl font-semibold mt-4'>PROBLEM</h4>
+                            <p className='md:text-2xl py-2 text-[#8e8e8f]'>{project.problem}</p>
                             </div>
                             <div className='flex flex-col'>
-                            <h4 className='text-2xl font-semibold mt-4'>SOLUTION</h4>
-                            <p className='text-xl py-2 text-[#8e8e8f]'>{project.solution}</p>
+                            <h4 className='text-xl md:text-2xl font-semibold mt-4'>SOLUTION</h4>
+                            <p className='md:text-2xl py-2 text-[#8e8e8f]'>{project.solution}</p>
                             </div>
                         </div>
                         <div className=''>
-                            <h4 className='text-2xl font-semibold'>KEY FEATURES</h4>
+                            <h4 className='text-xl md:text-2xl font-semibold'>KEY FEATURES</h4>
                             <div className='grid grid-cols-2 gap-4 mt-3'>
                                 {project.features.map((feature, idx) => (
-                                    <p key={idx} className='text-xl text-[#8e8e8f] flex items-center gap-2'><ArrowRight strokeWidth={1} /> {feature}</p>
+                                    <p key={idx} className='md:text-xl text-[#8e8e8f] flex items-center gap-2'><ArrowRight strokeWidth={1} /> {feature}</p>
                                 ))} 
                             </div>
                         </div>
                         <div>
-                            <h4 className='text-2xl font-semibold mt-4'>HIGHLIGHTS</h4>
-                            <p className='text-xl py-2 text-[#8e8e8f]'>{project.highlights}</p>
+                            <h4 className='text-xl md:text-2xl font-semibold mt-4'>HIGHLIGHTS</h4>
+                            <p className='md:text-xl py-2 text-[#8e8e8f]'>{project.highlights}</p>
                         </div>
-                        <div className='flex gap-2'>
+                        <div className='grid grid-cols-2 md:flex md:gap-2'>
                         {
                             project.tech.length > 0 && (
                                 project.tech.map((tech, idx) => (
-                                    <span key={idx} className='border-gray-800 text-[#8e8e8f] font-light border-1 rounded-xl px-3 w-fit'>{tech}</span>
+                                    <span key={idx} className='border-gray-800 text-[#8e8e8f] font-light border-1 rounded-xl px-3 my-2 w-fit'>{tech}</span>
                                 ))
                             )
                         }
                         </div>
-                        <hr className='mt-10 border-muted-foreground/40'/>
+                        <hr className='mt-3 border-muted-foreground/40'/>
                         <div className='flex gap-10 mt-4'>
-                            <a href={project.liveUrl} target="_blank" className='text-xl flex items-center gap-2 hover:opacity-80 rounded-full'>Live Site <ExternalLink size={20}/></a>
-                            <a href={project.githubUrl} target="_blank" className='text-xl flex items-center gap-2 hover:opacity-80 rounded-full'>GitHub Repo <GithubIcon size={20}/></a>
+                            <a href={project.liveUrl} target="_blank" className='md:text-xl flex items-center gap-2 hover:opacity-80 rounded-full'>Live Site <ExternalLink size={20}/></a>
+                            <a href={project.githubUrl} target="_blank" className='md:text-xl flex items-center gap-2 hover:opacity-80 rounded-full'>GitHub Repo <GithubIcon size={20}/></a>
                         </div>
                     </div>
                 ))}

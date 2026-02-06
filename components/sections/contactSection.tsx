@@ -65,29 +65,29 @@ export function ContactSection() {
       >
         <motion.h2
           variants={itemVariants}
-          className='text-6xl font-semibold'
+          className='text-4xl text-center md:text-6xl md:text-left font-semibold'
         >
           Let&apos;s Work Together
         </motion.h2>
         <motion.p
           variants={itemVariants}
-          className="mt-4 py-5 text-lg max-w-2xl text-[#8e8e8f]"
+          className="mt-4 py-5 text-lg max-w-2xl text-center md:text-left text-[#8e8e8f]"
         >
           I&apos;m always interested in hearing about new projects and opportunities. Feel free to reach out if you&apos;d like to discuss how I can help with your next web development project.
         </motion.p>
         <motion.div
           variants={itemVariants}
-          className='grid grid-cols-2 py-10'>
+          className='grid grid-cols-1 md:grid-cols-2 py-10'>
             {
               contactLinks.map((contact) => (
                 <motion.a 
                   key={contact.label}
-                  href={contact.href} 
-                  className="group flex mt-6 border-1 w-11/12 p-8 transition-colors duration-300 border-white/10 hover:border-white rounded-xl"
+                  href={contact.href}   
+                  className="group flex items-end mt-6 md:border-1 md:w-11/12 md:p-8 transition-colors duration-300 border-white/10 hover:border-white rounded-xl"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <contact.icon className="mr-4 group-hover:scale-125 transition-transform duration-300 ease-in-out" />
+                  <contact.icon className="mr-2 md:mr-4 group-hover:scale-125 transition-transform duration-300 ease-in-out" />
                   <div className='flex flex-col'>
                   <span className="font-medium text-[#8e8e8f]">{contact.label}</span>
                   <span className="text-lg font-semibold">{contact.value}</span>

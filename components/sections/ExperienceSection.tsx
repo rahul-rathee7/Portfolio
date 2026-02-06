@@ -52,7 +52,7 @@ export function ExperienceSection() {
             description: "Led hackathon coordination, demonstrating organizational and leadership skills."
         },
         {
-            title: "2nd Place – Typing Competition (YUGANTRAN Techfest)",
+            title: "1st Place – Typing Competition (YUGANTRAN Techfest)",
             description: "Demonstrated discipline, focus, and commitment to excellence in competitive environment."
         }
     ]

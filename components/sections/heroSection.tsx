@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Button } from '../ui/button'
 import { ArrowRightIcon, ArrowDown } from 'lucide-react'
+import Image from 'next/image'
 
 export function HeroSection() {
   return (
@@ -36,7 +37,7 @@ export function HeroSection() {
       className='flex flex-col gap-5 mt-5 items-center md:flex-row md:gap-10'>
         <a href='#projects'><Button size="lg" className='md:mt-10 bg-white text-black hover:bg-transparent hover:text-white hover:border-white border-1 transition duration-300 text-xl md:text-2xl'>View Projects<ArrowRightIcon className="ml-2" /></Button></a>
         <a href='#contact'><Button size="lg" className='md:mt-10 bg-black md:text-white border-1 text-2xl hover:bg-white hover:text-black transition duration-300'>Get in Touch</Button></a>
-        <a href='/Rahul_Rathee_Resume.pdf' target='_blank'><Button size="lg" className='md:mt-10 bg-white border-1 text-black text-2xl hover:bg-transparent hover:text-white transition duration-300'>Download Resume</Button></a>
+        <a href='/resume/Rahul_Rathee_Full_Stack_Developer_Resume.pdf' target='_blank' rel='noopener noreferrer'><Button size="lg" className='md:mt-10 bg-white border-1 text-black text-2xl hover:bg-transparent hover:text-white transition duration-300'>Download Resume</Button></a>
       </motion.div>
       <div
         className='absolute bottom-2 left-1/2 -translate-x-1/2'
